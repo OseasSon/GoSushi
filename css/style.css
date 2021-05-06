@@ -1,0 +1,38 @@
+.passwordDiv {
+    padding-top: 20pt;
+    margin-top: 20pt;
+    padding-bottom: 20pt;
+    margin-bottom: 20pt;
+    border-radius: 25px;
+    background-color: rgba(52,58,64,255);
+    color: white;
+}
+
+nav {
+    color: white;
+    font-size: large;
+}
+
+/*
+body {
+    background-image: url(../images/neon-street.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
+#invalid {
+    color: red;
+    display: none;
+}
+
+#valid {
+    color: green;
+    display: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+

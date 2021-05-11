@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- link to my js file -->
     <script src="js/script.js" defer></script>
+    <!-- link to jQuerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,16 +41,24 @@
 
         <!-- Password input container -->
         <div class="passwordDiv jumbotron container">
-            <h2>Staff Password Validator</h2>
-                <label for="password" class="mb-2 mr-sm-2">Password:</label>
-                <input type="text" class="mb-2 mr-sm-2" id="password" placeholder="Enter password" name="pswd">
-                <button onclick="validate()" type="submit" class="btn btn-secondary mb-2 mr-sm-2">Submit</button><br>
-            <label id="invalid"><b>Invalid password</b></label>
+            <h1>Password Validator</h1>
+            <label for="password" class="mb-2 mr-sm-2">Password:</label>
+            <input type="text" class="mb-2 mr-sm-2" id="password" placeholder="Enter password" name="pswd" style="height: 1cm">
+            <div id="submit"><button onclick="validate()" type="submit" class="btn btn-secondary mb-2 mr-sm-2">Submit</button></div><br>
+            <label id="invalid"><b>Invalid password</b><br>Must cointain at least: one uppercase; one lower case; one digit; one special character; min 8 characters long. <br></label>
             <label id="valid"><b>Valid password</b></label>
         </div>
 
-    </div> 
+        <!-- Customers data -->
+        <div class="container jumbotron customersDiv">
+            <h1>Customers</h1>
+            <button class="btn btn-secondary mb-2 mr-sm-2" id="getRandom">Generate customers</button>
+            <label for="getRandom" id="alert-message"></label>             
+            <div class="card-columns" style="text-align: center" id="output"></div>
+        </div>
 
+    </div> 
+   
 </body>
 
 </html>

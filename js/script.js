@@ -30,15 +30,15 @@ function validate(){
 /**
  * Generate random customers
  */
- $("#getRandom").click(function(e) {
-     if (valid == "true"){
-         getRandom();
-         $("#alert-message").text("Access granted").css({'color': 'green', 'font-weight': 'bold'});
-     }
-     else if (valid == "false") {
-         $("#alert-message").text("Please, enter a valid password.").css({'color': 'red', 'font-weight': 'bold'});
-     }
- });
+$("#getRandom").click(function(e) {
+    if (valid == "true"){
+        getRandom();
+        $("#alert-message").text("Access granted").css({'color': 'green', 'font-weight': 'bold'});
+    }
+    else if (valid == "false") {
+        $("#alert-message").text("Please, enter a valid password.").css({'color': 'red', 'font-weight': 'bold'});
+    }
+});
 
 function getRandom(){
     fetch('https://randomuser.me/api/?results=6')
@@ -67,3 +67,29 @@ function getRandom(){
 
     })
 }
+
+/**
+ * Calculates the menu total
+ */
+   
+function CalculateItemsValue(){
+ 
+    var total = 0;
+    var totalWithVat = 0;
+    var totalItems = 20;
+
+    for (var index = 1; index <= totalItems; index++) {
+             
+        itemID = document.getElementById("qnt_" + index);
+        total = total + parseFloat(itemID.value) * parseFloat(itemID.getAttribute("data-price"));
+    }
+
+    totalWithVat = total + total * (parseFloat(document.getElementById('vat').getAttribute("value-percentage")) / 100);
+    document.getElementById('subTotal').innerHTML = "€" + total.toFixed(2);
+    document.getElementById('itemsTotal').innerHTML = "€" + totalWithVat.toFixed(2);
+}
+ 
+document.querySelectorAll('[id^="qnt_"]').forEach(item => {
+ 
+    item.addEventListener('keyup', CalculateItemsValue);
+});

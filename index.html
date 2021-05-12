@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- link to my css file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" defer>
     <!-- link to my js file -->
     <script src="js/script.js" defer></script>
     <!-- link to jQuerry -->
@@ -22,30 +22,32 @@
     <div>
 
         <!--Nav bar-->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="logo" style="width:40px;">
-            </a>
-            
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="page1.html">GoSushi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page2.html">Try it</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="main-nav">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="logo" style="width: 60px">
+                </a>
+                <!-- Links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">GoSushi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-left: 1000px;" href="page2.html">Try it</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
 
         <!-- Password input container -->
-        <div class="passwordDiv jumbotron container">
+        <div class="container jumbotron passwordDiv">
             <h1>Password Validator</h1>
             <label for="password" class="mb-2 mr-sm-2">Password:</label>
-            <input type="text" class="mb-2 mr-sm-2" id="password" placeholder="Enter password" name="pswd" style="height: 1cm">
+            <input type="text" class="mb-2 mr-sm-2" id="password" placeholder="Enter password" name="pswd" style="height: 1cm; border-radius: 25px; border: none; padding-left: 5px;">
             <div id="submit"><button onclick="validate()" type="submit" class="btn btn-secondary mb-2 mr-sm-2">Submit</button></div><br>
-            <label id="invalid"><b>Invalid password</b><br>Must cointain at least: one uppercase; one lower case; one digit; one special character; min 8 characters long. <br></label>
+            <label id="invalid"><b>Invalid password</b><br>Must cointain at least: one uppercase; one lower case; one digit; one special character; min 8 characters long.<br></label>
             <label id="valid"><b>Valid password</b></label>
         </div>
 
@@ -55,6 +57,196 @@
             <button class="btn btn-secondary mb-2 mr-sm-2" id="getRandom">Generate customers</button>
             <label for="getRandom" id="alert-message"></label>             
             <div class="card-columns" style="text-align: center" id="output"></div>
+        </div>
+
+        <!-- Menu -->
+        <div class="container jumbotron menuDiv">
+            <h1>Menu</h1>
+            <div class="card-columns" style="text-align: center">
+                <div class="card jumbotron cardDiv">
+                    <div class="card-body" style="text-align:left">
+                        <h4 class="card-title">Sashimi</h4>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Qnt</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Sake</td>
+                                <td><input type="text" id="qnt_1" size="3" maxlength="3" value="0" data-price="6"/></td>
+                                <td>€6.00</td>
+                            </tr>
+                            <tr>
+                                <td>Ahi</td>
+                                <td><input type="text" id="qnt_2" size="3" maxlength="3" value="0" data-price="5.5"/></td>
+                                <td>€5.50</td>
+                            </tr>
+                            <tr>
+                                <td>Kani</td>
+                                <td><input type="text" id="qnt_3" size="3" maxlength="3" value="0" data-price="5"/></td>
+                                <td>€5.00</td>
+                            </tr>
+                            <tr>
+                                <td>Ebi</td>
+                                <td><input type="text" id="qnt_4" size="3" maxlength="3" value="0" data-price="5"/></td>
+                                <td>€5.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card jumbotron cardDiv">
+                    <div class="card-body" style="text-align:left">
+                        <h4 class="card-title">Nigiri</h4>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Qnt</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Maguro</td>
+                                <td ><input type="text" id="qnt_5" size="3" maxlength="3" value="0" data-price="5.5"/></td>
+                                <td>€5.50</td>
+                            </tr>
+                            <tr>
+                                <td>Sake</td>
+                                <td><input type="text" id="qnt_6" size="3" maxlength="3" value="0" data-price="5"/></td>
+                                <td>€5.00</td>
+                            </tr>
+                            <tr>
+                                <td>Toro</td>
+                                <td><input type="text" id="qnt_7" size="3" maxlength="3" value="0" data-price="4.5"/></td>
+                                <td>€4.50</td>
+                            </tr>
+                            <tr>
+                                <td>Ebi</td>
+                                <td><input type="text" id="qnt_8" size="3" maxlength="3" value="0" data-price="4.5"/></td>
+                                <td>€4.50</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card jumbotron cardDiv">
+                    <div class="card-body" style="text-align:left">
+                        <h4 class="card-title">Hossomaki Style</h4>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Qnt</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Philadelphia</td>
+                                <td ><input type="text" id="qnt_9"id size="3" maxlength="3" value="0" data-price="4.5"/></td>
+                                <td>€4.50</td>
+                            </tr>
+                            <tr>
+                                <td>Crunch</td>
+                                <td><input type="text" id="qnt_10" size="3" maxlength="3" value="0" data-price="4.5"/></td>
+                                <td>€4.50</td>
+                            </tr>
+                            <tr>
+                                <td>California</td>
+                                <td><input type="text" id="qnt_11" size="3" maxlength="3" value="0" data-price="4"/></td>
+                                <td>€4.00</td>
+                            </tr>
+                            <tr>
+                                <td>Dragon</td>
+                                <td><input type="text" id="qnt_12" size="3" maxlength="3" value="0" data-price="4"/></td>
+                                <td>€4.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card jumbotron cardDiv">
+                    <div class="card-body" style="text-align:left">
+                        <h4 class="card-title">Drinks</h4>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Qnt</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Water</td>
+                                <td ><input type="text" id="qnt_13"id size="3" maxlength="3" value="0" data-price="1.5"/></td>
+                                <td>€1.5</td>
+                            </tr>
+                            <tr>
+                                <td>Soda</td>
+                                <td><input type="text" id="qnt_14" size="3" maxlength="3" value="0" data-price="2"/></td>
+                                <td>€2.00</td>
+                            </tr>
+                            <tr>
+                                <td>Aahi</td>
+                                <td><input type="text" id="qnt_15" size="3" maxlength="3" value="0" data-price="4.5"/></td>
+                                <td>€4.50</td>
+                            </tr>
+                            <tr>
+                                <td>Sakê</td>
+                                <td><input type="text" id="qnt_16" size="3" maxlength="3" value="0" data-price="5"/></td>
+                                <td>€5.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card jumbotron cardDiv">
+                    <div class="card-body" style="text-align:left">
+                        <h4 class="card-title">Uramaki Style</h4>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Qnt</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Philadelphia</td>
+                                <td ><input type="text" id="qnt_17" size="3" maxlength="3" value="0" data-price="4"/></td>
+                                <td>€4.00</td>
+                            </tr>
+                            <tr>
+                                <td>Crunch</td>
+                                <td><input type="text" id="qnt_18" size="3" maxlength="3" value="0" data-price="4.00"/></td>
+                                <td>€4.00</td>
+                            </tr>
+                            <tr>
+                                <td>California</td>
+                                <td><input type="text" id="qnt_19" size="3" maxlength="3" value="0" data-price="3.5"/></td>
+                                <td>€3.50</td>
+                            </tr>
+                            <tr>
+                                <td>Dragon</td>
+                                <td><input type="text" id="qnt_20" size="3" maxlength="3" value="0" data-price="3.5"/></td>
+                                <td>€3.50</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card jumbotron cardDiv">
+                    <div class="card-body" style="text-align:left">
+                        <h4 class="card-title">Bill</h4>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td id="subTotal">€0</td>
+                            </tr>
+                            <tr>
+                                <td>VAT</td>
+                                <td id="vat" value-percentage="9">9%</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <th id="itemsTotal">€0</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div> 

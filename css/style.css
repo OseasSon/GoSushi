@@ -1,3 +1,8 @@
+body {
+    background-image: url();
+    background-size: 100%;
+}
+
 .passwordDiv {
     padding-top: 20pt;
     margin-top: 20pt;
@@ -5,7 +10,10 @@
     margin-bottom: 20pt;
     border-radius: 25px;
     background-color: rgba(52,58,64,255);
-    color: white;
+    color: pink;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
 
 .customersDiv {
@@ -15,33 +23,51 @@
     margin-bottom: 20pt;
     border-radius: 25px;
     background-color: rgba(52,58,64,255);
-    color: white;
+    color: pink;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.menuDiv {
+    padding-top: 20pt;
+    margin-top: 20pt;
+    padding-bottom: 20pt;
+    margin-bottom: 20pt;
+    border-radius: 25px;
+    background-color: rgba(52,58,64,255);
+    color: pink;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
 
 button {
-    border-radius: 25px;
+    border-radius: 25px !important;
     font-size: 20pt;
-    border: 1px solid transparent;
+    color: pink !important;
 }
 
 .cardDiv {
+    width: 310px !important;
     padding-top: 20pt;
     margin-top: 20pt;
     padding-bottom: 20pt;
     margin-bottom: 20pt;
     border-radius: 25px;
     color: rgba(52,58,64,255);
+    height: 400px;
+    font-size: larger;
+    color: black;
+    border-style: solid;
+    border-color: black;
 }
 
 .cardImg{
     text-align: center;
     width: 50%;
     border-radius: 100%;
-}
-
-nav {
-    color: white;
-    font-size: large;
+    border-style: solid;
 }
 
 /*
@@ -76,3 +102,40 @@ label {
     margin-right: 700px;
 }
 
+th, td {
+    height: 50px;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+table {
+    width: 200px;
+}
+
+input[type=number] {
+    width: 80px;
+}
+
+.nav-link:hover {
+    color: white !important;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: pink !important;
+    font-size: 30px;
+}
+
+.navbar {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: black;
+}

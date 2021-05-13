@@ -63,21 +63,42 @@ button {
     border-color: black;
 }
 
+.card-sum {
+    width: 1040px !important;
+    padding-top: 20pt;
+    margin-top: 20pt;
+    padding-bottom: 20pt;
+    margin-bottom: 10pt;
+    margin-left: 13pt;
+    border-radius: 25px;
+    color: rgba(52,58,64,255);
+    font-size: larger;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+.card-description {
+    width: 1040px !important;
+    padding-top: 20pt;
+    margin-top: 20pt;
+    padding-bottom: 20pt;
+    margin-bottom: 20pt;
+    margin-left: 13pt;
+    border-radius: 25px;
+    color: rgba(52,58,64,255);
+    font-size: larger;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
 .cardImg{
     text-align: center;
     width: 50%;
     border-radius: 100%;
     border-style: solid;
 }
-
-/*
-body {
-    background-image: url(../images/neon-street.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-*/
 
 #invalid {
     color: red;
@@ -97,14 +118,9 @@ label {
     font-size: 15pt;
 }
 
-#submit {
-    float: right;
-    margin-right: 700px;
-}
-
 th, td {
     height: 50px;
-    text-align: center;
+    text-align: left;
 }
 
 table {

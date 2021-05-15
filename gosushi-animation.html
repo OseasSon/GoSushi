@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSushi Animation</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- link to my css file -->
+    <link rel="stylesheet" href="css/style.css" defer>
+    <!-- link to my js files -->
+    <script src="js/animation.js" defer></script>
+    <!-- link to jQuerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- link to three.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js"></script>
+</head>
+
+<body>
+
+    <!--Nav bar-->
+    <div class="main-nav">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" style="width: 60px">
+            </a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">GoSushi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gosushi-animation.html">Try it</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/OseasSon/GoSushi">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Flag section -->
+        
+        <section class="flag container jumbotron passwordDiv">
+            <h1>We serve the traditional japanese sushi!</h1>
+        </section>
+
+    <!-- Feed pikachu --> 
+    <div class="container jumbotron passwordDiv">
+        <h1>Feed Pikachu</h1>
+        <button class="btn btn-secondary mb-2 mr-sm-2" id="feed" style="position: relative; top: 20px">Click to feed</button>
+        <div class="container">
+            <img id="pikachu" src="images/pikachu.png" alt="pikachu">
+            <img id="sushi" src="images/logo.png" alt="sushi">                         
+        </div>
+    </div>
+            
+</body>
+    
+</html>

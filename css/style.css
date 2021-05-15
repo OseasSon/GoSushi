@@ -155,3 +155,23 @@ input[type=number] {
     border-bottom-width: 2px;
     border-color: black;
 }
+
+section.flag {
+  width: 100vw;
+  max-height: 100vh;
+  height: 35vw;
+}
+
+#pikachu {
+    position: relative;
+    left: 280px;
+    top: -80px;
+    width: 60%;
+}
+
+#sushi {
+    position: relative;
+    width: 10%;
+    top: -30px;
+    left: -500px;
+}

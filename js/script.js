@@ -43,14 +43,18 @@ $("#getRandom").click(function(e) {
     }
 });
 
-//takes data from randomuser.me and dysplay as cards on the screen
+//takes data from randomuser.me API and displays it as cards on the screen
 function getRandom(){
+    //fetching data from the API (I limited it to 6 users using "?results=6")
     fetch('https://randomuser.me/api/?results=6')
-    .then((res) => res.json())
-    .then((data) => {
+    //check for a good response in json format
+    .then((res) => res.json()) 
+    //displays data
+    .then((data) => { 
         let author = data.results;
         let output = ''
         console.log(data);
+        //runs through each user and generate html code to display
         author.forEach(function(user){
             output += `
                 <div class="card jumbotron cardDiv" style="width:300px">
@@ -58,7 +62,7 @@ function getRandom(){
                         <img class="card-img-top cardImg" src="${user.picture.large}" alt="Card image">
                     </div>    
                     <div class="card-body" style="text-align:left">
-                        <h4 class="card-title">${user.name.title} ${user.name.last}</h4>
+                        <h4 class="card-title"> ${user.name.title} ${user.name.last}</h4>
                         <p class="card-text">Age: ${user.dob.age}</p>
                         <p class="card-text">Gender: ${user.gender}</p>
                         <p class="card-text">From: ${user.location.country}</p>
@@ -66,7 +70,7 @@ function getRandom(){
                 </div>
                 `;
             });
-
+        //inserts the output variable into the doom
         document.getElementById('output').innerHTML = output;
 
     })

@@ -70,7 +70,7 @@ function getRandom(){
                 </div>
                 `;
             });
-        //inserts the output variable into the doom
+        //inserts the output variable into the dom
         document.getElementById('output').innerHTML = output;
 
     })

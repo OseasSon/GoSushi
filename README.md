@@ -7,7 +7,7 @@ It also has a waving flag built with three.js and a interactive section where th
 
 - 🔭 I’m currently working on **projects to my college**
 
-- 🌱 I’m currently learning **Java, JavaScript**
+- 🌱 I’m currently learning **React**
 
 - 📫 How to reach me **oseas.filho@hotmail.com**
 

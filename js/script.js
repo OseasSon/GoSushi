@@ -3,7 +3,7 @@
     api_base: "https://api-iam.intercom.io",
     app_id: "d90noo0b",
     email: "mytest.intercom@gmail.com", // User ID
-    user_hash: "tV6OeSGzXNSzu8I5Rff3ZOlHqbqKWwyY10j8Ktl1" // HMAC using SHA-256
+    user_hash: "fa8d4975081eda190c792e5f849746979271088989fc3fda1ef38bf278d1214e" // HMAC using SHA-256
   };
 </script>
 

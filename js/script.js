@@ -1,7 +1,9 @@
 window.intercomSettings = {
-api_base: "https://api-iam.intercom.io",
-app_id: "d90noo0b",
-};
+    api_base: "https://api-iam.intercom.io",
+    app_id: "d90noo0b",
+    email: "mytest.intercom@gmail.com", // User ID
+    user_hash: "fa8d4975081eda190c792e5f849746979271088989fc3fda1ef38bf278d1214e" // HMAC using SHA-256
+  };
 
 // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/d90noo0b'
 (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/d90noo0b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();

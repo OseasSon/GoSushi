@@ -3,6 +3,7 @@ window.intercomSettings = {
     app_id: "d90noo0b",
     email: "mytest.intercom@gmail.com", // User ID
     custom_launcher_selector:'#my_custom_link',
+    hide_default_launcher: true,
     user_hash: "fa8d4975081eda190c792e5f849746979271088989fc3fda1ef38bf278d1214e" // HMAC using SHA-256
   };
 

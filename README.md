@@ -1,13 +1,8 @@
-<h1 align="center">Hi 👋, I'm Oséas Filho</h1>
-<h3 align="center">A passionate still learning developer from Brazil</h3>
+<h1 align="center">Hi 👋</h1>
 
 GoSushi is a web page created to achieve marks for Client Side Programming classes from CCT College. 
 It works as a system that allows the staff of a restaurant log in with a password, generate customers and add orders from the menu.
 It also has a waving flag built with three.js and a interactive section where the user can feed a cute Pikachu, which was built with JQuerry.
-
-- 🔭 I’m currently working on **projects to my college**
-
-- 🌱 I’m currently learning **React**
 
 - 📫 How to reach me **oseas.filho@hotmail.com**
 

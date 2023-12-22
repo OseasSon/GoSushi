@@ -1,6 +1,7 @@
 window.intercomSettings = {
     api_base: "https://api-iam.intercom.io",
     app_id: "d90noo0b",
+    user_id: "1234",
     email: "mytest.intercom@gmail.com", // User ID
     custom_launcher_selector:'#my_custom_link',
     hide_default_launcher: true,

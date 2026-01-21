@@ -1,6 +1,7 @@
 window.intercomSettings = {
 api_base: "https://api-iam.intercom.io",
 app_id: "d90noo0b",
+brand: "d90noo0b",
 brand_id: "d90noo0b"
 };
 

@@ -1,7 +1,7 @@
 window.intercomSettings = {
 api_base: "https://api-iam.intercom.io",
 app_id: "d90noo0b",
-brand: "d90noo0b"
+brand_id: "d90noo0b"
 };
 
 // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/d90noo0b'
